@@ -75,6 +75,11 @@ export function createStore(currentToken, currentUser) {
         if (state.isPlaying) return; // Prevent starting a new sound if one is already playing
 
         const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+        if (audioContext.state === 'suspended') {
+          audioContext.resume();
+        }
+
         console.log('AudioContext initialized');
         const oscillator = audioContext.createOscillator();
         const gainNode = audioContext.createGain();
