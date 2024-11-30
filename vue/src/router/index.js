@@ -27,7 +27,7 @@ const routes = [
     name: 'home',
     component: HomeView,
     meta: {
-      requiresAuth: true
+      requiresAuth: false
     }
   },
   {
@@ -59,7 +59,7 @@ const routes = [
     name: "randomToneRow",
     component: RandomToneRowView,
     meta: {
-      requiresAuth: true
+      requiresAuth: false
     }
   },
   {
@@ -67,7 +67,7 @@ const routes = [
     name: "toneRowMatrix",
     component: ToneRowMatrixView,
     meta: {
-      requiresAuth: true
+      requiresAuth: false
     }
   },
   {
@@ -75,7 +75,7 @@ const routes = [
     name: "tonerow",
     component: ToneRowView,
     meta: {
-      requiresAuth: true
+      requiresAuth: false
     }
   },
   {
